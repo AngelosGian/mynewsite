@@ -53,26 +53,27 @@ I am a web developer with a passion for creating beautiful and intuitive website
 
             </div>
         </section>
+            <div class="border-b border-blue-500 "></div>      
         <!-- Contact -->
-        <section class="mx-auto p-5 grid text-white">
+        <section class="mx-auto p-5 flex flex-col items-center justify-center text-white">
             <!-- Contact Form -->
             <h2 class="text-xl text-center font-semibold">Contact Me</h2>
-            <form action="">
-                <div>
-                    <label for="name">Name</label>
+            <form action="" class="mx-auto flex flex-col w-full md:w-1/2">
+                <div class="mb-3">
+                    <label class="p-5"for="name">Name</label>
                     <input type="text" name="name">
                 </div>
-                <div>
-                    <label for="email">E-mail</label>
+                <div class="mb-3">
+                    <label class="p-5" for="email">E-mail</label>
                     <input type="text" name="email">
                 </div>
-                <div>
-                    <label for="subject">Subject</label>
+                <div class="mb-3">
+                    <label class="p-5" for="subject">Subject</label>
                     <input type="text" name="subject">
                     </div>
-                <div>
-                    <label for="">Message</label>
-                    <textarea name="" id="" cols="30" rows="10"></textarea>
+                <div class="mb-3">
+                    <label class="p-5" for="message">Message</label>
+                    <textarea name="message" id="message" cols="30" rows="10"></textarea>
                 </div>
                 <button type="submit">Send</button>
             </form>
