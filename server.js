@@ -28,19 +28,31 @@ app.post('/', (req, res) => {
     <h3>Message</h3>
     <p>${req.body.message}</p>
     `
-
+// create reusable transporter object using the default SMTP transport
     let transporter = nodemailer.createTransport({
-        host: '',
-        port: 587,
-        secure: false,
+        host: 'smtp.hostinger.com',
+        port: 465,
+        secure: true,
         auth: {
-            user:'',
-            password: ''
-        }
+            user:'info@pickthemup.eu',
+            password: '$^oRUrZR5BJzv^c'
+        },
         tls:{
             rejectUnauthorized:false
         }
     })
+
+
+    // send mail with defined transport object
+  transporter.sendMail(mailOptions, (error, info) => {
+      if (error) {
+          return console.log(error);
+      }
+      console.log('Message sent: %s', info.messageId);   
+      console.log('Preview URL: %s', nodemailer.getTestMessageUrl(info));
+
+      res.render('contact', {msg:'Email has been sent'});
+  });
 })
 
 
