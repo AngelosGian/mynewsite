@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en" class="">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,86 +8,101 @@
     <link rel="stylesheet" href="../public/css/style.css">
     <title>Angelos Giannourakos</title>
 </head>
+
 <body>
     <main class="bg-slate-800 min-h-screen">
         <section class="mx-auto flex flex-col p-5 items-center justify-center text-white md:flex-row ">
-            
 
-                <div class="rounded-full m-3 w-52 h-52 bg-slate-400 flex items-center justify-center">
-                    <img src="../public/images/me-portait-02.jpg" class="rounded-full w-48 h-48" alt="Angelos Giannourakos">
-                </div>
-                <div class="flex-col items-center">
-                    <h1 class="text-2xl font-bold">Angelos Giannourakos</h1>    
-                    <h2 class="text-xl font-semibold text-center md:text-left"> Web Developer</h2>
-                    <a href="mailto:angelosgian@protonmail.com">
-                        <h3 class="font-mono font-light text-center md:text-left">angelosgian@protonmail.com</h3>
-                    </a>
-                </div>
-        
+
+            <div class="rounded-full m-3 w-52 h-52 bg-slate-400 flex items-center justify-center">
+                <img src="../public/images/me-portait-02.jpg" class="rounded-full w-48 h-48" alt="Angelos Giannourakos">
+            </div>
+            <div class="flex-col items-center">
+                <h1 class="text-2xl font-bold">Angelos Giannourakos</h1>
+                <h2 class="text-xl font-semibold text-center md:text-left"> Web Developer</h2>
+                <a href="mailto:angelosgian@protonmail.com">
+                    <h3 class="font-mono font-light text-center md:text-left">angelosgian@protonmail.com</h3>
+                </a>
+            </div>
+
         </section>
 
-                <div class="border-b border-blue-500 "></div>
+        <div class="border-b border-blue-500 "></div>
         <section class="mx-auto p-5 grid text-white md:w-1/2">
-            
+
             <h2 class="text-xl text-center font-semibold">About</h2>
             <p class="text-center">
-I am a web developer with a passion for creating beautiful and intuitive websites. With my love for problem-solving and attention to detail, I strive to bring my clients' visions to life. I keep up-to-date with the latest web development technologies and trends, constantly looking for ways to improve my skills and deliver outstanding results. <br>
-<span class="text-italic font-semibold block mt-5">
-    Let's make the web a better place, together!
-</span>
+                I am a web developer with a passion for creating beautiful and intuitive websites. With my love for
+                problem-solving and attention to detail, I strive to bring my clients' visions to life. I keep
+                up-to-date with the latest web development technologies and trends, constantly looking for ways to
+                improve my skills and deliver outstanding results. <br>
+                <span class="text-italic font-semibold block mt-5">
+                    Let's make the web a better place, together!
+                </span>
             </p>
         </section>
 
-            <div class="border-b border-blue-500 "></div>    
-<!-- Portfolio -->
+        <div class="border-b border-blue-500 "></div>
+        <!-- Portfolio -->
         <section class="mx-auto p-5 grid text-white">
             <h2 class="text-xl text-center font-semibold">Portfolio</h2>
-            
+
             <!-- Portfolio Grid Container -->
             <div class="grid grid-cols gap-4 mt-5 justify-items-center sm:grid-cols-2 md:grid-cols-4">
                 <!-- Portfolio Grid Item 1 -->
-                <div class="bg-slate-600 shadow-xl rounded-xl hover:scale-110 transition duration-500 cursor-pointer object-contain">       
-                    <a href="https://fortisventus.com"><img src="../public/images/fortisventus.jpg" class="rounded-t-xl"alt="Fortis Ventus"></a>
-                    <div class="p-5  text-center "><a href="https://fortisventus.com" class="text-lg">Fortis Ventus</a></div>
+                <div
+                    class="bg-slate-600 shadow-xl rounded-xl hover:scale-110 transition duration-500 cursor-pointer object-contain">
+                    <a href="https://fortisventus.com"><img src="../public/images/fortisventus.jpg" class="rounded-t-xl"
+                            alt="Fortis Ventus"></a>
+                    <div class="p-5  text-center "><a href="https://fortisventus.com" class="text-lg">Fortis Ventus</a>
+                    </div>
                 </div>
                 <!-- Portfolio Grid Item 2 -->
-                <div class="bg-slate-600 shadow-xl rounded-xl hover:scale-110 transition duration-500 cursor-pointer object-contain">       
-                    <a href="https://cute-horse-719e08.netlify.app/"><img src="../public/images/" class="rounded-t-xl"alt="Random Generator"></a>
-                    <div class="p-5  text-center "><a href="https://cute-horse-719e08.netlify.app/" class="text-lg">Random Generator Password</a></div>
+                <div
+                    class="bg-slate-600 shadow-xl rounded-xl hover:scale-110 transition duration-500 cursor-pointer object-contain">
+                    <a href="https://cute-horse-719e08.netlify.app/"><img src="../public/images/" class="rounded-t-xl"
+                            alt="Random Generator"></a>
+                    <div class="p-5  text-center "><a href="https://cute-horse-719e08.netlify.app/"
+                            class="text-lg">Random Generator Password</a></div>
                 </div>
                 <!-- Portfolio Grid Item 3 -->
             </div>
         </section>
-            <div class="border-b border-blue-500 "></div>      
+        <div class="border-b border-blue-500 "></div>
         <!-- Contact -->
         <section class="mx-auto p-5 flex flex-col items-center justify-center text-white">
             <!-- Contact Form -->
             <h2 class="text-xl text-center font-semibold">Contact Me</h2>
-            <form action="" class="mx-auto flex flex-col w-full md:w-1/2">
+            <form action="/send" class="mx-auto flex flex-col w-full md:w-1/2">
                 <div class="mb-3 grid grid-cols-1 text">
-                    <label class="p-1"for="name">Name</label>
-                    <input type="text" id="name" name="name" class="rounded-sm p-3 placeholder:p-3 text-black" placeholder="Write your name">
+                    <label class="p-1" for="name">Name</label>
+                    <input type="text" id="name" name="name" class="rounded-sm p-3 placeholder:p-3 text-black"
+                        placeholder="Write your name">
                 </div>
                 <div class="mb-3 grid grid-cols-1">
                     <label class="p-1" for="email">E-mail</label>
-                    <input type="text" id="email" name="email" class="rounded-sm p-3 placeholder:p-3 text-black" placeholder="Write your e-mail">
+                    <input type="text" id="email" name="email" class="rounded-sm p-3 placeholder:p-3 text-black"
+                        placeholder="Write your e-mail">
                 </div>
                 <div class="mb-3 grid grid-cols-1">
                     <label class="p-1" for="subject">Subject</label>
-                    <input type="text" id="subject" name="subject" class="rounded-sm p-3 placeholder:p-3 text-black" placeholder="Write your subject">
-                    </div>
+                    <input type="text" id="subject" name="subject" class="rounded-sm p-3 placeholder:p-3 text-black"
+                        placeholder="Write your subject">
+                </div>
                 <div class="mb-3 grid grid-cols-1">
                     <label class="p-1" for="message">Message</label>
-                    <textarea name="message" id="message" cols="30" rows="10" class="rounded-sm p-3 placeholder:p-3 text-black" placeholder="Write your message"></textarea>
+                    <textarea name="message" id="message" cols="30" rows="10"
+                        class="rounded-sm p-3 placeholder:p-3 text-black" placeholder="Write your message"></textarea>
                 </div>
                 <button class="px-5 py-2 rounded-sm bg-slate-500 hover:bg-slate-600" type="submit">Send</button>
             </form>
         </section>
-        
+
     </main>
     <footer>
 
     </footer>
     <script src="../public/js/main.js"></script>
 </body>
+
 </html>
